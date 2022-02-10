@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		3B812A9D27B4A17000CD7DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812A9C27B4A17000CD7DAB /* AppDelegate.swift */; };
 		3B812A9F27B4A17000CD7DAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812A9E27B4A17000CD7DAB /* SceneDelegate.swift */; };
-		3B812AA127B4A17000CD7DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812AA027B4A17000CD7DAB /* ViewController.swift */; };
 		3B812AA427B4A17000CD7DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B812AA227B4A17000CD7DAB /* Main.storyboard */; };
 		3B812AA627B4A17400CD7DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B812AA527B4A17400CD7DAB /* Assets.xcassets */; };
 		3B812AA927B4A17400CD7DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B812AA727B4A17400CD7DAB /* LaunchScreen.storyboard */; };
+		3B812AB927B4A2D300CD7DAB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812AB827B4A2D300CD7DAB /* Contact.swift */; };
+		3B812ABB27B4A61000CD7DAB /* ContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812ABA27B4A61000CD7DAB /* ContactsListTableViewController.swift */; };
+		3B812ABD27B4A64A00CD7DAB /* DetailsContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812ABC27B4A64A00CD7DAB /* DetailsContactViewController.swift */; };
+		3B812AC227B4A8D500CD7DAB /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B812AC127B4A8D500CD7DAB /* ContactController.swift */; };
+		3B812AC527B4B47800CD7DAB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B812AC427B4B47800CD7DAB /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B812A9927B4A17000CD7DAB /* ContactsCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B812A9C27B4A17000CD7DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B812A9E27B4A17000CD7DAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B812AA027B4A17000CD7DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B812AA327B4A17000CD7DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B812AA527B4A17400CD7DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B812AA827B4A17400CD7DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B812AAA27B4A17400CD7DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B812AB027B4A19E00CD7DAB /* ContactsCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContactsCloudKit.entitlements; sourceTree = "<group>"; };
+		3B812AB827B4A2D300CD7DAB /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		3B812ABA27B4A61000CD7DAB /* ContactsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTableViewController.swift; sourceTree = "<group>"; };
+		3B812ABC27B4A64A00CD7DAB /* DetailsContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContactViewController.swift; sourceTree = "<group>"; };
+		3B812AC127B4A8D500CD7DAB /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		3B812AC427B4B47800CD7DAB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B812AC527B4B47800CD7DAB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				3B812A9B27B4A17000CD7DAB /* ContactsCloudKit */,
 				3B812A9A27B4A17000CD7DAB /* Products */,
+				3B812AC327B4B47800CD7DAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,83 @@
 		3B812A9B27B4A17000CD7DAB /* ContactsCloudKit */ = {
 			isa = PBXGroup;
 			children = (
-				3B812A9C27B4A17000CD7DAB /* AppDelegate.swift */,
-				3B812A9E27B4A17000CD7DAB /* SceneDelegate.swift */,
-				3B812AA027B4A17000CD7DAB /* ViewController.swift */,
-				3B812AA227B4A17000CD7DAB /* Main.storyboard */,
-				3B812AA527B4A17400CD7DAB /* Assets.xcassets */,
-				3B812AA727B4A17400CD7DAB /* LaunchScreen.storyboard */,
-				3B812AAA27B4A17400CD7DAB /* Info.plist */,
+				3B812AB027B4A19E00CD7DAB /* ContactsCloudKit.entitlements */,
+				3B812AB727B4A26600CD7DAB /* Models */,
+				3B812AB427B4A23500CD7DAB /* Controllers */,
+				3B812AB227B4A1E400CD7DAB /* Views */,
+				3B812AB127B4A1CE00CD7DAB /* Resources */,
 			);
 			path = ContactsCloudKit;
+			sourceTree = "<group>";
+		};
+		3B812AB127B4A1CE00CD7DAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B812A9C27B4A17000CD7DAB /* AppDelegate.swift */,
+				3B812A9E27B4A17000CD7DAB /* SceneDelegate.swift */,
+				3B812AA527B4A17400CD7DAB /* Assets.xcassets */,
+				3B812AAA27B4A17400CD7DAB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B812AB227B4A1E400CD7DAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B812AB327B4A1F400CD7DAB /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B812AB327B4A1F400CD7DAB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3B812AA227B4A17000CD7DAB /* Main.storyboard */,
+				3B812AA727B4A17400CD7DAB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3B812AB427B4A23500CD7DAB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B812AB627B4A25300CD7DAB /* ModelControllers */,
+				3B812AB527B4A24100CD7DAB /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B812AB527B4A24100CD7DAB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B812ABA27B4A61000CD7DAB /* ContactsListTableViewController.swift */,
+				3B812ABC27B4A64A00CD7DAB /* DetailsContactViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3B812AB627B4A25300CD7DAB /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B812AC127B4A8D500CD7DAB /* ContactController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		3B812AB727B4A26600CD7DAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B812AB827B4A2D300CD7DAB /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B812AC327B4B47800CD7DAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B812AC427B4B47800CD7DAB /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B812AA127B4A17000CD7DAB /* ViewController.swift in Sources */,
+				3B812AB927B4A2D300CD7DAB /* Contact.swift in Sources */,
 				3B812A9D27B4A17000CD7DAB /* AppDelegate.swift in Sources */,
+				3B812AC227B4A8D500CD7DAB /* ContactController.swift in Sources */,
+				3B812ABB27B4A61000CD7DAB /* ContactsListTableViewController.swift in Sources */,
 				3B812A9F27B4A17000CD7DAB /* SceneDelegate.swift in Sources */,
+				3B812ABD27B4A64A00CD7DAB /* DetailsContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +369,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ContactsCloudKit/ContactsCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G3VP62JDQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactsCloudKit/Info.plist;
+				INFOPLIST_FILE = ContactsCloudKit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +389,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,11 +398,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ContactsCloudKit/ContactsCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G3VP62JDQQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactsCloudKit/Info.plist;
+				INFOPLIST_FILE = ContactsCloudKit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +418,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
